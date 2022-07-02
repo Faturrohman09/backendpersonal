@@ -4,7 +4,7 @@ const url = 'mongodb+srv://hirosima2628:faturrohman09@cluster0.sldwg.mongodb.net
 const client = new MongoClient(url);
 const dbName = 'db_personalweb';
 const app = express()
-const port = 5000
+const port = process.env.PORT || 5000
 
 app.get('/', async(req, res) => {
 
